@@ -128,3 +128,60 @@ Courses section
     padding: 5px;
     font-size: 14px;
 }
+
+
+/* Media  */
+
+/* for Mobile  */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 35px;
+    }
+}
+
+/* Medium devices tab) */
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 25px;
+    }
+    .player, .blog{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .courses{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 35px;
+        padding-left: 25px;
+    }
+    .course-time{
+        margin-right: 20%;
+    }
+
+
+}
